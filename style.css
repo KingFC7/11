@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif, monospace;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px;
+    background: linear-gradient(to right top, #0000ff, #ffff00, #ff0000);
+}
+.logo img {
+  position: absolute;
+  height: 100px;
+  width: auto;
+	top: 20%;
+	left: 22%;
+	right: 27%;
+	transform: translate(-50%,-50%);
+}
+.container{
+    background: #fff;
+    box-shadow: 0px 0px 10px rgab(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+
+.container .text {
+font-size: 35px;
+font-weight: 600;
+margin: 50px 0px;
+text-align: center;
+background: linear-gradient(to right, #0000ff, #ffff00, #ff0000);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation-name: blink;
+animation-duration: 2.5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+0% {
+opacity: 1;
+}
+50% {
+opacity: 0;
+transform: scale(0.9);
+}
+100% {
+opacity: 1;
+}
+}
+
+.container form .form-row{
+    display: flex;
+    margin: 32px 0;
+   
+}
+
+
+form .form-row .input-data{
+    width: 100%;
+    height: 80px;
+    margin: 10px 10px;
+}
+
+form .form-row .input-age{
+    width: 40%;
+    height: 80px;
+    margin: 10px 10px;
+}
+
+form .form-row .input-gender{
+    width: 40%;
+    height: 80px;
+    margin: 5px 1px;
+}
+
+ .main-title{
+    font-size: 20px;
+    font-weight: 500;  
+    margin: 10px;
+}
+
+input[type=text], select {
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+   
+  }
+
+  label{
+    opacity: 70%;
+  }
+ 
+
+  input[type=submit] {
+    width: 100%;
+    background: linear-gradient(to right top, #00ff00, #0000ff, #ff69b4);
+    opacity: 90%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    }
+    input[type=submit]:hover {
+        opacity: 100%;
+      }
+
+   
